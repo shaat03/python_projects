@@ -1,9 +1,12 @@
 # function for merging files given as parameter
 import os
 
+print('test line 1')
 # defining the function with list of arguments for input files and keyword
 # argument for output file.
 def merge_files(*args, output=None):
+    print('test line 2')
+    answer2 = ""
     #if output is not given, print error, usage and exit
     if output is None:
         print("Error! You did not specify 'output' parameter")
@@ -52,4 +55,4 @@ def merge_files(*args, output=None):
                 print('File %s does not exist. Skipping...' % file)
 
 if "__name__" == "__main__":
-    pass
+    print('test line 3')

@@ -12,10 +12,10 @@ def pig_latin(word):
         range = 0
         print(letter)
         # if 1st letter is voel, return the word appended with 'ay'
-        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:
+        if letter.lower() in 'aeiou':
             return word + 'ay'
         # if letter is voel, but a number of consonants already were found, then break the for loop
-        elif letter.lower() in ['a', 'e', 'i', 'o', 'u'] and range > 0:
+        elif letter.lower() in 'aeiou' and range > 0:
             break
         # consonant is found so increment range
         else:
